@@ -1,0 +1,22 @@
+{
+  "name": "daynoweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mureti254/DaynoWeb.git"
+  },
+  "author": "Mukiricollinsm@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mureti254/DaynoWeb/issues"
+  },
+  "homepage": "https://github.com/Mureti254/DaynoWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
