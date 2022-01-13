@@ -28,6 +28,13 @@ server.get("/services", (req, res) => {
         .type(".html")
         .sendFile(path.join(__dirname, `src`, `public`, `html`, "services.html"))
 });
+server.get("/reach-us",(req,res)=>{
+    console.log(req.url);
+    res
+    .status(200)
+    .type(".html")
+    .sendFile(path.join(__dirname, `src`, `public`, `html`, "contactus.html"))
+})
 server.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
