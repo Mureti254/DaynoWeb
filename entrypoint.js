@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const server = express();
-const port = 3000;
+const port = 3001;
 const staticDir = path.join(__dirname, `src`, `public`);
 server.use(express.static(staticDir));
 console.log({ staticDir })
@@ -34,6 +34,13 @@ server.get("/reach-us",(req,res)=>{
     .status(200)
     .type(".html")
     .sendFile(path.join(__dirname, `src`, `public`, `html`, "contactus.html"))
+})
+server.get('/about',(req,res)=>{
+    res
+    .status(200)
+    .type(".html")
+    .sendFile(path.join(__dirname, `src`, `public`, `html`, "about.html"))
+
 })
 server.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

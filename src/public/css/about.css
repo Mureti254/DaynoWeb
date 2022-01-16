@@ -43,7 +43,7 @@ a {
     margin-left: 10px;
 }
 
-.contact-header {
+.about{
     width: 100px;
     border-style: solid;
     border-width: 4px;
@@ -54,7 +54,4 @@ a {
 p{
     margin: 50px;
 }
-#map{
-    height: 400px;
-    width:100%;
-}
+
